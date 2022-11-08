@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooting Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <h1>2-Player Shooting Game</h1>
+    </div>
+    
+    <!-- scoreboard -->
+    <div class="scoreboard">
+        <div class="score">
+            <div class="player1score">
+                <h3>Player 1 :</h3>
+            </div>
+            <div class="player2score">
+                <h3>Player 2 :</h3>
+            </div>
+        </div>
+        <div class="winner">
+            <h2></h2>
+            <h3>Current Game Winner :</h3>
+        </div>
+        <div class="gameDecision">
+            <button class="startGame">Start</button>
+            <button class="resetMatch gradient-border">Reset Match</button>
+            <button class="resetGame">Reset Game</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- playground -->
+    <div class="playground">
+        <div class="player player1">
+            <h4>Player 1</h4>
+            <h5 class="player1lives">Lives</h5>
+            <button class="player1shoot">shoot 2</button>
+        </div>
+        <div class="player player2">
+            <h4>Player 2</h4>
+            <h5 class="player2lives">Lives</h5>
+            <button class="player2shoot">shoot 1</button>
+        </div>
+    </div>
+
+    <!-- instruction -->
+    <div class="instructions">
+        <h3>Instruction</h3>
+        <ol type="i">
+            <li>Play in fullscreen for better experience</li>
+            <li>All buttons inside the playground are diabled</li>
+            <li>You have to press start button before every match in order to play the match</li>
+            <li>Scores of current match are visible but the game will over when someone's total score will be 3</li>
+            <li>White line indicates whose turn is it meanwhile other player's shoot button will not work</li>
+            <li>Every player has 5 lives in a match and each Game will have 3 rounds</li>
+            <li>Reset Match - It will reset both player's heath to 100 in current match</li>
+            <li>Reset Game - It will reset the entire game including the main scores</li>
+        </ol>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
